@@ -1,0 +1,9 @@
+[package]
+name = "ternary-automata"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Cellular automata with ternary states: elementary CA rules extended to 3 states, Wolfram numbering, simulation, pattern detection, cycle finding, entropy evolution"
+repository = "https://github.com/SuperInstance/ternary-automata"
+keywords = ["ternary", "cellular-automata", "wolfram", "simulation"]
+categories = ["mathematics", "algorithms", "simulation"]
