@@ -109,3 +109,12 @@ fn main() {
 ## License
 
 MIT
+
+## See Also
+- **ternary-life** — related
+- **ternary-fire** — related
+- **ternary-sandpile** — related
+- **ternary-ising** — related
+- **ternary-cell** — related
+- **ternary-collatz** — related
+
