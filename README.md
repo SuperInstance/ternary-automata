@@ -96,6 +96,32 @@ Ternary Automata provides the spatial simulation substrate for agent grid models
 
 See [ARCHITECTURE.md](https://github.com/SuperInstance/SuperInstance/blob/main/ARCHITECTURE.md) for spatial dynamics architecture.
 
+
+### Entropy Regime Classification
+
+Tracking Shannon entropy H(t) over time reveals the CA's behavioral regime:
+
+```
+H decreasing → self-organization (order emerging from chaos)
+H increasing → dissolution (structure breaking down)
+H constant   → equilibrium or maximum chaos
+H oscillating → periodic dynamics
+```
+
+For ternary systems, H ∈ [0, log₂3] ≈ [0, 1.585] bits. Rules with H converging to 0 produce fixed points; rules with H near 1.585 produce noise.
+
+### Configuration Space Size
+
+For width W, the configuration space is 3^W:
+
+```
+W=10:   59,049 configurations
+W=20:   3.5 billion configurations
+W=100:  5.15 × 10^47 configurations
+```
+
+Cycle detection via Floyd's algorithm is guaranteed to terminate — every deterministic finite CA eventually cycles (pigeonhole principle). The cycle length can be up to 3^W in the worst case.
+
 ## References
 
 1. Wolfram, S. (2002). *A New Kind of Science*. Wolfram Media.
